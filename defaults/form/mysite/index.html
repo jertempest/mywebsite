@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]> <html class="no-js"><![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="">
+</head>
+
+<body>
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+    <style>
+        p {
+            padding: 0;
+            margin: 0;
+        }
+        
+        body {
+            padding: 0;
+            margin: 0;
+        }
+        
+        .error {
+            color: #ff0000;
+        }
+    </style>
+    <!-- STYLE ONLY FOR DEMO - REMOVE -->
+
+    <form action="mail.php" method="POST">
+        <p>Name</p> <input type="text" name="name">
+        <span class="error">* <?php echo $nameErr;?> </span>
+
+        <p>Email</p> <input type="text" name="email">
+        <span class="error">* <?php echo $emailErr;?> </span>
+
+        <p>Phone</p> <input type="text" name="phone">
+
+        <p>Request Phone Call:</p>
+
+        Yes:<input type="checkbox" value="Yes" name="call"> No:
+
+        <input type="checkbox" value="No" name="call">
+
+        <br />
+
+        <p>Message</p>
+        <textarea name="message" rows="6" cols="25"></textarea>
+
+        <br />
+
+        <input type="submit" value="Send" name="Send">
+
+        <input type="reset" value="Clear">
+
+    </form>
+</body>
+
+</html>

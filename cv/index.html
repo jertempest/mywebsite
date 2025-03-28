@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <!-- METAS -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>My Web Developer CV</title>
+    <meta name="description" content="My CV for starting in front-end web-development">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="web-development, front end web-development, cv, resume">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/my-website.css">
+    <link rel="stylesheet" href="css/flexslider.css">
+    <!-- JQUERY -->
+    <!--jQUERY 1.12.4-->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <!-- FLEXSLIDER - CSS & JS -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.7.0/jquery.flexslider.js"></script>
+    <!-- FLEXSLIDER - HOOKUP -->
+    <script type="text/javascript" charset="utf-8">
+        $(window).load(function() {
+            $('.flexslider').flexslider();
+        });
+    </script>
+</head>
+
+<body>
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+    <script src="" async defer></script>
+    <main id="mainContainer">
+        <!-- FLEXSLIDER CONTAINING PHOTOS OF THE WEBSITES THAT I HAVE BUILT STARTING WITH SCHOOL WITH DATES ON THE PHOTOS TO SHOW MY PROGRESS-->
+        <nav id="mainNav" class="fr">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#download">Download</a></li>
+            </ul>
+
+        </nav>
+        <div class="clear"></div>
+        <header id="mainHeader">
+            <h1>Jeremy Tempest</h1>
+        </header>
+        <section id=projectsCompleted>
+            <div class="flexslider">
+                <ul class="slides">
+                    <li>
+                        <img src="http://placeimg.com/900/300/nature" />
+                    </li>
+                    <li>
+                        <img src="http://placeimg.com/900/300/tech" />
+                    </li>
+                    <li>
+                        <img src="http://placeimg.com/900/300/animals" />
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+
+
+        <!-- ABOUT, EDUCATION, CONTACT  -->
+
+        <section id="about">
+            <p>about me, why am i learning webdevelopment, why did choose webdevelopment, why am i leaving cabinetmaking, </p>
+        </section>
+        <section class="fb">
+            <div id="mohawk">
+                <div class="flexslider">
+                    <ul class="slides">
+                        <li>
+                            <img src="http://placeimg.com/900/300/nature" />
+                        </li>
+                        <li>
+                            <img src="http://placeimg.com/900/300/tech" />
+                        </li>
+                        <li>
+                            <img src="http://placeimg.com/900/300/animals" />
+                        </li>
+                    </ul>
+                </div>
+                <h1>Mohawk college</h1>
+            </div>
+
+            <div id="sheridan">
+                <div class="flexslider">
+                    <ul class="slides">
+                        <li>
+                            <img src="http://placeimg.com/900/300/nature" />
+                        </li>
+                        <li>
+                            <img src="http://placeimg.com/900/300/tech" />
+                        </li>
+                        <li>
+                            <img src="http://placeimg.com/900/300/animals" />
+                        </li>
+                    </ul>
+                </div>
+                <h1>Sheridan</h1>
+            </div>
+
+            <div id="selfLearn">
+                <div class="flexslider">
+                    <ul class="slides">
+                        <li>
+                            <img src="http://placeimg.com/900/300/nature" />
+                        </li>
+                        <li>
+                            <img src="http://placeimg.com/900/300/tech" />
+                        </li>
+                        <li>
+                            <img src="http://placeimg.com/900/300/animals" />
+                        </li>
+                    </ul>
+                </div>
+                <h1>Self learning</h1>
+            </div>
+
+        </section>
+
+        <section id="contact">
+            <h1>Contact</h1>
+            <div id="contact_form">
+                <form class="form-inline" method="post" action="mail.php">
+                    <!-- first name -->
+                    <label for="first_name">Name *</label>
+                    <input type="text" name="first_name" maxlength="50" size="30"><br>
+                    <!-- last name
+                    <label for="last_name">Last Name *</label>
+                    <input type="text" name="last_name" maxlength="50" size="30"> -->
+                    <!-- email -->
+                    <label for="email">Email Address *</label>
+                    <input type="text" name="email" maxlength="80" size="30">
+            </div>
+            <div>
+                <label for="comments ">Comments *</label>
+                <textarea name="comments " maxlength="1000 " cols="25 " rows="6 " placeholder="Comments Here"></textarea>
+            </div>
+            <div>
+                <input type="submit" value="Submit">
+            </div>
+            </form>
+        </section>
+        <section id="download">
+            <h1>Downloads</h1>
+            <p>add links to resume, cover letter, CV pdf downloads</p>
+        </section>
+
+        <footer id="mainFooter">
+            <p> Footer</p>
+        </footer>
+    </main>
+</body>
+
+</html>

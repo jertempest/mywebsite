@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.7.0/flexslider.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.7.0/jquery.flexslider.js"></script>
+    <link rel="stylesheet" href="css/multiple_slideshow.css">
+    <script type="text/javascript" charset="utf-8">
+        $(window).load(function() {
+            $('#main-slider').flexslider({
+                animation: 'slide',
+                controlsContainer: '.flex-container',
+                slideshowSpeed: 4000,
+            });
+
+            $('#secondary-slider').flexslider({
+                animation: 'fade',
+                controlsContainer: '.flex-container',
+                slideshowSpeed: 2000,
+            });
+        })
+    </script>
+</head>
+
+<body>
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+    <div class="flexsliderparent">
+        <div id="main-slider" class="flexslider flexcats1">
+            <ul class="slides">
+                <li>
+                    <img src="images/a1.jpg" />
+                </li>
+                <li>
+                    <img src="images/a2.jpg" />
+                </li>
+                <li>
+                    <img src="images/a3.jpg" />
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="fsp2">
+        <div id="secondary-slider" class="flexslider">
+            <ul class="slides">
+                <li>
+                    <img src="images/b1.png">
+                </li>
+                <li>
+                    <img src="images/b2.jpg">
+                </li>
+                <li>
+                    <img src="images/b3.jpg">
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>

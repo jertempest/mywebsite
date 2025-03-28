@@ -1,0 +1,241 @@
+/* GLOBAL */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: aqua;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    resize: none;
+}
+
+label {
+    float: left;
+    text-align: right;
+    margin-right: 15px;
+    width: 100px;
+}
+
+
+/* LAYOUT */
+
+#mainContainer {
+    padding: 2%;
+    margin: 2%;
+}
+
+#mainNav {
+    background-color: violet;
+}
+
+#mainNav ul li {
+    display: inline;
+    background-color: #fd5;
+}
+
+#mainNav a {
+    color: tomato;
+}
+
+#home {
+    background-color: #0f0;
+}
+
+#about {
+    background-color: #33b;
+}
+
+#education {
+    background-color: #f00;
+}
+
+#contact {
+    background-color: #dd69c4;
+}
+
+#download {
+    background-color: #ff0;
+}
+
+#mainHeader {
+    background-color: #fff;
+    text-align: center;
+}
+
+#sheridan {
+    background-color: #00afff;
+}
+
+#mohawk {
+    background-color: #ff7b00;
+}
+
+#selfLearn {
+    background-color: #9051ca;
+}
+
+#mainFooter {
+    background-color: #2e95d1;
+}
+
+#contact h1 {
+    text-align: center;
+}
+
+#contact_form {
+    display: flex;
+}
+
+
+/* REUSEABLE */
+
+.form-inline {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+
+/* Add some margins for each label */
+
+.form-inline label {
+    margin: 5px 10px 5px 0;
+}
+
+
+/* Style the input fields */
+
+.form-inline input {
+    vertical-align: middle;
+    margin: 5px 10px 5px 0;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+
+
+/* Style the submit button */
+
+.form-inline button {
+    padding: 10px 20px;
+    background-color: dodgerblue;
+    border: 1px solid #ddd;
+    color: white;
+}
+
+.form-inline button:hover {
+    background-color: royalblue;
+}
+
+
+/* all columns calculated with a 10px padding and margin */
+
+.col13 {
+    width: 33.33%;
+}
+
+.col23 {
+    width: 62.6666%;
+}
+
+.col33 {
+    width: 96%;
+}
+
+.col12 {
+    width: 46%;
+}
+
+.col14 {
+    width: 21%;
+}
+
+.col15 {
+    width: 16%;
+}
+
+.col16 {
+    width: 12.6666%;
+}
+
+.col34 {
+    width: 71%;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.clear {
+    clear: both;
+}
+
+.fb {
+    display: flex;
+    flex-direction: row;
+}
+
+
+/* MOBILE */
+
+@media screen and (max-width: 480px) {
+    /*LAYOUT*/
+    #container {
+        max-width: 480px;
+        min-width: 320px;
+        width: 90%;
+    }
+    /*COLUMNS*/
+    .col12,
+    .col13,
+    .col23,
+    .col33,
+    .col14,
+    .col15,
+    .col16,
+    .col34 {
+        display: block;
+        float: none !important;
+    }
+    .col13 {
+        width: 96%;
+    }
+    .col23 {
+        width: 96%;
+    }
+    .col33 {
+        width: 96%;
+    }
+    .col12 {
+        width: 96%;
+    }
+    .col14 {
+        width: 96%;
+    }
+    .col15 {
+        width: 96%;
+    }
+    .col16 {
+        width: 96%;
+    }
+    .col34 {
+        width: 96%;
+    }
+    .col12nomp {
+        width: 98%;
+        margin: 0;
+        padding: 1%;
+        outline: 1px dotted #ccc;
+    }
+}
