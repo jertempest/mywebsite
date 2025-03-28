@@ -1,0 +1,1 @@
+This is from 2020 when I first started learning how to create websites. I don't know where all this came from. It is either from me having fun and figuring things out or from my time at Sheridan College in their FrontEnd Web development course or from other learning resoources like LinkedIn or Youtube.
